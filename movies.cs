@@ -20,23 +20,7 @@ namespace WindowsFormsApp1
      {
             public int TimingCount = 0;
         public bool Withpitt = false;
-        public override String GetInfo()
-        {
-            var str = "Я фильм";
-            str += base.GetInfo();
-            str += String.Format("\nXронометраж (мин): {0}", this.TimingCount);
-            if (Withpitt == true)
-            {
-                str += "\nБред Пит есть в фильме";
-            }
-            else
-            {
-                str += "\nБреда Пита нет в фильме";
-            }
-
-            
-            return str;
-        }
+        
         public static Film Generate()
         {    
             return new Film
